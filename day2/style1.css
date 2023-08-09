@@ -1,0 +1,40 @@
+#test1 {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+  .searchbutton {
+    background-color: orange;
+  }
+
+  li{
+    display: inline;
+    padding: 30px;
+    color: white;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: horizontal;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    border: 3px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: gold;
+    height: 50px;
+    padding: 10px;
+    list-style: none;
+  }
+
+  .amazon {
+    color: orange;
+    font-size: 25px;
+    text-decoration: none;
+  }
+  body {
+    background-color: antiquewhite;
+}

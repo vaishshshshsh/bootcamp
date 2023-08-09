@@ -1,0 +1,81 @@
+/* Additional styling (optional) */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.box:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+.box:hover {
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic layout styles */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.box1 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0.5); /* Red with 50% opacity */
+}
+
+.box2 {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 255, 0, 0.5); /* Green with 50% opacity */
+}
+
+.box3 {border: 1px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Additional styling (optional) */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.box1:hover {
+    background-color: rgba(200, 200, 200, 0.5); /* Light gray with 50% opacity */
+    cursor: pointer;
+}
+

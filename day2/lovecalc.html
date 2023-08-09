@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelove.css">
+    <link rel="script" href="script.js"
+    <title>Love Calculator</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="Heading"> 
+            <h1> Love Calculator</h1>
+            <p> Calculate your love</p>
+        </div>
+
+        <div class="MainContent">
+            <div>
+                <label for="Your Name"> Your Name</label> <br>
+                <input type="text" id="yourname" placeholder="Enter your name" spellcheck="false" maxlength="30" required />
+            </div>
+            <div>
+                <label for="Their Name"> Their Name</label> <br>
+                <input type="text" id="theirname" placeholder="Enter their name" spellcheck="false" maxlength="30" required />
+            </div>
+        </div>
+        <button type="submit"> 🥰 Calculate</button>
+
+        <div class="result">
+            <h2> Result </h2>
+            <div class="divider"></div>
+            <p id="lovescoreis"></p>
+            <h1 id="lovescore"> </h1>
+            <p id="loveinfo"></p>
+            <p id="reload"
+                style= "cursor: pointer;
+                display: none;
+                margin-top: 30px;
+                font-weight: 700;"
+                onclick= "window.location.reload();"
+                >Re Calculate
+            </p>
+        </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>

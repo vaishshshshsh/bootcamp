@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>css-positioning-demo</title>
+</head>
+<header>
+    <h1 id="head"> CSS Positioning Demo</h1>
+</header>
+<body>
+<div id="button-group">
+    <button class="button" id="static-btn">Static Positioning</button>
+    <button class="button" id="relative-btn"> Relative Positioning</button>
+    <button class="button" id="absolute-btn"> Absolute Positioning</button>
+    <button class="button" id="fixed-btn"> Fixed Positioning</button>
+</div>
+<div class="postioning-type-static" style="display: block;">
+<h2>Static Positioning</h2>
+<code>
+    position: static; <br>
+    left: 50px; <br>
+    top: 50px; <br>
+</code>
+<div class="box"></div>
+</div>
+
+<div class="postioning-type-relative">
+    <h2>Relative Positioning</h2>
+    <code>
+        position: relative; <br/>
+        left: 50px; <br/>
+        top: 50px; <br/>
+    </code>
+    <div class="box"></div>
+    </div>
+
+<div class="postioning-type-absolute">
+    <h2>Absolute Positioning</h2>
+    <code>
+        position: absolute; <br>
+        left: 50px; <br>
+        top: 50px; <br>
+    </code>
+    <div class="box"></div>
+    </div>
+</div>    
+
+<div class="postioning-type-fixed">
+    <h2>Fixed Positioning</h2>
+    <code>
+        position: fixed; <br/>
+        left: 50px; <br/>
+        top: 50px; <br/>
+    </code>
+    <div class="box"></div>
+    </div>
+</div>    
+
+<footer>
+    <p>CSS </p>
+</footer>
+</body>
+<script>
+    const staticBtn=document.getElementById('static-btn');
+    const relativeBtn=document.getElementById('relative-btn');
+    const absoluteBtn=document.getElementById('absolute-btn');
+    const fixedBtn=document.getElementById('fixed-btn');
+
+
+    const staticPostioning= document.querySelector('.static');
+    const relativePostioning=document.querySelector('.relative');
+    const absolutePositioning=document.querySelector('.absolute');
+    const fixedPositioning=document.querySelector('.fixed');
+
+    staticBtn.addEventListener('click', ()=>{
+        staticPostioning.style.display = 'block';
+        relativePostioning.style.display = 'none';
+        absolutePositioning.style.display = 'none';
+        fixedPositioning.style.display = 'none';
+    });
+
+    relativeBtn.addEventListener('click', ()=>{
+        staticPostioning.style.display = 'none';
+        relativePostioning.style.display = 'block';
+        absolutePositioning.style.display = 'none';
+        fixedPositioning.style.display = 'none';
+    });
+
+    absoluteBtn.addEventListener('click', ()=>{
+        staticPostioning.style.display = 'none';
+        relativePostioning.style.display = 'none';
+        absolutePositioning.style.display = 'block';
+        fixedPositioning.style.display = 'none';
+    });
+
+    fixedBtn.addEventListener('click', () => {
+        staticPostioning.style.display = 'none';
+        relativePostioning.style.display = 'none';
+        absolutePositioning.style.display = 'none';
+        fixedPositioning.style.display = 'block';
+    });
+    
+</script>
+</html> 
+
+
